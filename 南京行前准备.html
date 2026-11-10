@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京行前准备 · 11.12–11.16 · 出发前清单</title>
+<style>
+:root{
+  --red:#9e2b25; --red-d:#7c1f1a; --gold:#c9a227; --ink:#22201e; --ink-2:#57514c;
+  --line:#e7ded4; --bg:#f6f2ec; --card:#fffdf9; --green:#2f6b4f; --blue:#2a5b7d;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+  radial-gradient(1200px 500px at 80% -10%, #f3e3d0 0%, transparent 60%),
+  radial-gradient(900px 400px at -10% 5%, #efe6d9 0%, transparent 55%),
+  var(--bg);
+  color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:90px}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
+
+/* ---------- 头部 ---------- */
+header{background:linear-gradient(135deg,#4a4238 0%,#6b5c48 55%,#8a7355 100%);color:#fff;
+  padding:30px 0 26px;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+header::after{content:"行前";position:absolute;right:-6px;bottom:-34px;font-size:120px;font-weight:900;
+  color:rgba(255,255,255,.07);letter-spacing:-6px;pointer-events:none;font-family:"Songti SC","SimSun",serif}
+header .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12px;letter-spacing:3px;opacity:.85;margin:0 0 8px}
+h1{margin:0;font-size:29px;line-height:1.25;font-weight:800;letter-spacing:.5px;
+  font-family:"Songti SC","SimSun","PingFang SC",serif}
+h1 small{display:block;font-size:13px;font-weight:400;opacity:.85;margin-top:8px;letter-spacing:1px;
+  font-family:-apple-system,"PingFang SC",sans-serif}
+.countdown{margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-size:13px;backdrop-filter:blur(4px)}
+.countdown b{color:#ffe9a8;font-size:16px;font-variant-numeric:tabular-nums}
+.backlink{margin-left:10px;color:#fff;font-size:12.5px;text-decoration:none;border:1px solid rgba(255,255,255,.3);
+  border-radius:999px;padding:6px 13px;display:inline-block;vertical-align:middle}
+.backlink:hover{background:rgba(255,255,255,.14)}
+
+/* ---------- 总进度条 ---------- */
+.progress-wrap{position:sticky;top:0;z-index:20;background:rgba(246,242,236,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.progress-inner{max-width:780px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.progress-inner .pl{font-size:12px;color:var(--ink-2);font-weight:700;white-space:nowrap}
+.bar{flex:1;height:9px;border-radius:999px;background:#e6dccd;overflow:hidden}
+.bar>i{display:block;height:100%;width:0%;border-radius:999px;
+  background:linear-gradient(90deg,var(--gold),var(--red));transition:width .35s ease}
+.pct{font-size:12.5px;font-weight:800;color:var(--red-d);font-variant-numeric:tabular-nums;
+  min-width:86px;text-align:right;cursor:pointer;user-select:none}
+.pct:hover{text-decoration:underline;text-decoration-style:dotted;text-decoration-color:#b9a88f}
+
+/* ---------- 吸顶导航 ---------- */
+nav.tabs{position:sticky;top:42px;z-index:19;background:rgba(246,242,236,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-bottom:20px}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.tabs .wrap::-webkit-scrollbar{display:none}
+nav.tabs a{flex:0 0 auto;text-decoration:none;color:var(--ink-2);font-size:13px;font-weight:600;
+  padding:6px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+nav.tabs a:hover{background:#fff;border-color:var(--line);color:var(--red)}
+
+/* ---------- 区块 ---------- */
+section{margin:0 0 26px;scroll-margin-top:142px}
+h2{font-size:19px;margin:0 0 12px;display:flex;align-items:center;gap:9px;
+  font-family:"Songti SC","SimSun",serif;letter-spacing:.5px}
+h2::before{content:"";width:4px;height:19px;background:var(--red);border-radius:2px;display:inline-block}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.note{font-size:13px;color:var(--ink-2)}
+.tip{background:#fbf3e2;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:9px 12px;
+  margin-top:10px;font-size:12.5px;color:#6b5426}
+.tip b{color:#8a6413}
+
+/* ---------- 阶段时间轴 ---------- */
+.phase{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow);margin-bottom:16px;overflow:hidden}
+.phase-hd{display:flex;align-items:center;gap:12px;padding:14px 16px;background:linear-gradient(180deg,#fffdf9,#faf5ee);
+  border-bottom:1px solid var(--line)}
+.phase-tag{flex:0 0 auto;min-width:78px;text-align:center;background:var(--red);color:#fff;border-radius:10px;
+  padding:5px 10px;font-weight:800;font-size:13px;line-height:1.3}
+.phase-tag small{display:block;font-size:10.5px;font-weight:600;opacity:.85}
+.phase-hd .pt{font-weight:800;font-size:15.5px}
+.phase-hd .ps{font-size:12.5px;color:var(--ink-2)}
+.phase-body{padding:6px 14px 14px}
+
+/* ---------- 清单 ---------- */
+ul.check{list-style:none;margin:0;padding:0}
+ul.check li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed #efe7dc;font-size:13.5px}
+ul.check li:last-child{border-bottom:0}
+ul.check input{margin-top:4px;width:18px;height:18px;accent-color:var(--red);flex:0 0 auto;cursor:pointer}
+ul.check label{cursor:pointer;flex:1}
+ul.check .when{font-size:11px;color:#fff;background:var(--red-d);border-radius:999px;padding:1px 8px;
+  margin-right:6px;font-weight:700;white-space:nowrap;display:inline-block}
+ul.check b{color:var(--ink)}
+ul.check .sub{display:block;font-size:12px;color:var(--ink-2);margin-top:1px}
+ul.check li.done label{text-decoration:line-through;color:#a79b8c}
+
+/* ---------- 清单分类卡片 ---------- */
+.grid2{display:grid;gap:12px}
+@media(min-width:660px){.grid2{grid-template-columns:1fr 1fr}}
+.packcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;box-shadow:var(--shadow)}
+.packcard h3{margin:0 0 8px;font-size:14.5px;display:flex;align-items:center;gap:7px}
+.packcard h3 .n{font-size:11px;color:#fff;background:#b9a88f;border-radius:999px;padding:0 8px;font-weight:700}
+.packcard h3 .n.ok{background:var(--green)}
+.packcard.hot{border-color:#e8b9b2;background:#fdf7f5}
+.packcard.hot h3{color:var(--red-d)}
+
+/* ---------- 表格 ---------- */
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f3ece2;font-size:12px;letter-spacing:.5px;color:var(--ink-2);font-weight:700}
+tr:last-child td{border-bottom:0}
+td b{color:var(--red-d)}
+
+/* ---------- 出门检查 ---------- */
+.gopack{background:linear-gradient(135deg,#7c1f1a,#9e2b25);color:#fff;border-radius:16px;padding:18px;
+  box-shadow:0 10px 30px rgba(124,31,26,.25)}
+.gopack h2{color:#fff;margin:0 0 4px}
+.gopack h2::before{background:#ffe9a8}
+.gopack .sub{font-size:12.5px;opacity:.85;margin:0 0 14px}
+.gopack .grid2{gap:10px}
+.gopack .packcard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);box-shadow:none}
+.gopack .packcard h3{color:#ffe9a8}
+.gopack ul.check li{border-bottom-color:rgba(255,255,255,.16);color:#fff}
+.gopack ul.check .sub{color:rgba(255,255,255,.75)}
+.gopack ul.check li.done label{color:rgba(255,255,255,.55)}
+.gopack ul.check input{accent-color:#ffe9a8}
+
+/* ---------- 应急卡 ---------- */
+.emerg{display:grid;gap:10px}
+.erow{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;box-shadow:var(--shadow)}
+.erow .ic{flex:0 0 auto;font-size:19px;line-height:1.3}
+.erow .ec{flex:1}
+.erow .ec b{font-size:13.5px}
+.erow .ec p{margin:2px 0 0;font-size:12.5px;color:var(--ink-2)}
+.erow .ec .call{color:var(--red-d);font-weight:800;font-variant-numeric:tabular-nums}
+
+/* ---------- 其他 ---------- */
+.pill{display:inline-block;font-size:11.5px;background:#eee5d8;border-radius:999px;padding:2px 10px;
+  margin:2px 4px 2px 0;color:#6b5a42;font-weight:600}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#2f2a24;color:#fff;
+  font-size:13px;padding:9px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;z-index:50}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;font-size:12px;color:#a09484;margin:34px 0 10px;line-height:1.9}
+footer b{color:var(--red)}
+.backtop{position:fixed;right:16px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--red);
+  color:#fff;display:grid;place-items:center;text-decoration:none;box-shadow:0 6px 18px rgba(158,43,37,.35);
+  font-size:18px;z-index:30}
+@media print{
+  body{background:#fff;padding:0}
+  nav.tabs,.backtop,.progress-wrap,.toast{display:none}
+  header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">PRE-TRIP · 出发前准备</p>
+    <h1>南京行前准备清单
+      <small>11.12 周四出发 · 白云校区 → 白云机场 · 一次勾完不慌</small>
+    </h1>
+    <div>
+      <div class="countdown">距离出发还有 <b id="cd">—</b> 天</div>
+      <a class="backlink" href="南京5日行程.html">← 返回行程主页</a>
+    </div>
+  </div>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-inner">
+    <span class="pl">打包进度</span>
+    <div class="bar"><i id="barFill"></i></div>
+    <span class="pct" id="pct">0%</span>
+  </div>
+</div>
+
+<nav class="tabs">
+  <div class="wrap">
+    <a href="#countdown">⏳ 倒计时</a>
+    <a href="#booking">🎫 订票</a>
+    <a href="#docs">🪪 证件</a>
+    <a href="#pack">🎒 打包</a>
+    <a href="#gopack">🚪 出门检查</a>
+    <a href="#tech">📱 手机</a>
+    <a href="#weather">🌡️ 天气</a>
+    <a href="#emerg">🆘 应急</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ============ 倒计时任务表 ============ -->
+  <section id="countdown">
+    <h2>⏳ 出发倒计时（只剩 2 天，按顺序做）</h2>
+    <p class="note" style="margin-top:-4px">今天 11/10（周二），<b>后天 11/12 周四中午 11:30 就出发</b>。不像之前是半个月后，这次是真的要动手了。</p>
+
+    <div class="phase">
+      <div class="phase-hd"><div class="phase-tag">T-2<small>11/10 今天</small></div>
+        <div><div class="pt">今天必须完成：票 + 房 + 刷预约余票</div><div class="ps">时间不够了，价格会往上走</div></div></div>
+      <div class="phase-body">
+        <ul class="check">
+          <li><input type="checkbox" id="t1"><label for="t1"><b>先买返程机票</b> 禄口 → 白云，11/16 周一 <b>17:30–18:00 起飞</b><span class="sub">23:30 返校的硬约束。今天订会比之前贵，但没得选，先锁它。</span></label></li>
+          <li><input type="checkbox" id="t2"><label for="t2"><b>再买去程票</b> 白云 → 禄口，11/12 周四 <b>15:00–16:30 起飞</b><span class="sub">12:00 从学校打车 30–40 分钟到机场，13:00 到，值机从容。机票贵就对比高铁 G638（14:48 发车 ¥782）。</span></label></li>
+          <li><input type="checkbox" id="t3"><label for="t3"><b>订酒店 4 晚</b> 11/12–11/16，新街口/张府园站 500 m 内<span class="sub">选「可免费取消」的。工作日房源充足，但别拖到最后。</span></label></li>
+          <li><input type="checkbox" id="t4"><label for="t4"><b>刷中山陵 11/13 余票</b>（公众号「中山陵园风景区」）<span class="sub">放票窗口（11/6 16:00）已过，只能刷余票/候补。约不到不影响行程，周五改走灵谷寺。</span></label></li>
+          <li><input type="checkbox" id="t5"><label for="t5"><b>刷南京博物院 11/15 余票</b>（小程序，每日 18:00 放 7 天后票）<span class="sub">你的场次 11/9 已放完。今明两天 18:00 刷回流票；11/15 当天开馆后还可刷「当天捡漏票」。</span></label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-hd"><div class="phase-tag">T-1<small>11/11 周三</small></div>
+        <div><div class="pt">前一晚：打包 + 收尾确认</div><div class="ps">周四下课就走，没时间现找东西</div></div></div>
+      <div class="phase-body">
+        <ul class="check">
+          <li><input type="checkbox" id="t6"><label for="t6">按下面「打包清单」收好行李，箱子放门口</label></li>
+          <li><input type="checkbox" id="t7"><label for="t7">手机充满电、充电宝充满（<b>充电宝必须随身，不能托运</b>）</label></li>
+          <li><input type="checkbox" id="t8"><label for="t8">18:00 再刷一次南博回流票（周三这波是最后的正常机会）</label></li>
+          <li><input type="checkbox" id="t9"><label for="t9">把航班信息、酒店地址发给室友/家人；周四早上下课前把箱子放好</label></li>
+          <li><input type="checkbox" id="t10"><label for="t10">设闹钟：周四 <b>6:50</b> 起床、<b>11:25</b> 提醒下课即走</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-hd"><div class="phase-tag">T-0<small>11/12 周四</small></div>
+        <div><div class="pt">出发日时间线（照这个走）</div><div class="ps">11:30 下课 → 12:00 打车 → 13:00 机场 → 17:00 左右落地南京</div></div></div>
+      <div class="phase-body">
+        <ul class="check">
+          <li><input type="checkbox" id="t11"><label for="t11"><b>06:50</b> 起床，最后检查证件（身份证 + 学生证）</label></li>
+          <li><input type="checkbox" id="t12"><label for="t12"><b>11:30</b> 下课，拿行李就走（行李前一晚收好，别回宿舍折腾）</label></li>
+          <li><input type="checkbox" id="t13"><label for="t13"><b>12:00</b> 打车去白云机场（¥60–80，30–40 分钟）</label></li>
+          <li><input type="checkbox" id="t14"><label for="t14"><b>13:00</b> 到机场，值机安检（国内航班提前 90 分钟）</label></li>
+          <li><input type="checkbox" id="t15"><label for="t15"><b>15:00–16:30</b> 起飞 → 落地禄口 → 地铁 S1 + 1 号线到酒店，约 18:00 到</label></li>
+          <li><input type="checkbox" id="t16"><label for="t16"><b>19:40</b> 夫子庙夜景（比原计划早到，还能先吃顿正经晚饭）</label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 订票确认 ============ -->
+  <section id="booking">
+    <h2>🎫 订票信息核对（买完逐项对）</h2>
+    <table>
+      <tr><th>项目</th><th>一定要对</th></tr>
+      <tr><td><b>去程机票</b></td><td>11/12 周四 · 广州白云 CAN → 南京禄口 NKG · <b>15:00–16:30 起飞</b> · 姓名证件号无误</td></tr>
+      <tr><td><b>返程机票</b></td><td>11/16 周一 · 南京禄口 NKG → 广州白云 CAN · <b>17:30–18:00 起飞</b> · <b>落地不超过 21:00</b></td></tr>
+      <tr><td><b>酒店</b></td><td>11/12 入住、11/16 退房 = <b>4 晚</b> · 地址在 1 号线「张府园」/「新街口」附近 · 可免费取消</td></tr>
+      <tr><td><b>中山陵（如约到）</b></td><td>11/13 周五 · 上午场 · 一人一证（带着预约时的身份证）</td></tr>
+      <tr><td><b>南京博物院（如约到）</b></td><td>11/15 周日 · 下午场 · 实名信息与身份证一致</td></tr>
+    </table>
+    <div class="tip"><b>提醒：</b>这两个预约<b>已经过了正常放票窗口</b>，能不能进去取决于余票/捡漏。<b>没约到不影响行程</b>：周五改灵谷寺，周日改朝天宫 + 六朝博物馆。学生证也带上，景点半价全靠它（明孝陵、总统府、中华门、栖霞山、科举博物馆）。</div>
+  </section>
+
+  <section id="docs">
+    <h2>🪪 证件与关键信息（丢了最麻烦）</h2>
+    <div class="box">
+      <ul class="check">
+        <li><input type="checkbox" id="d1"><label for="d1"><b>身份证</b>（坐飞机 + 住酒店 + 所有预约入场，<b>必须原件</b>）</label></li>
+        <li><input type="checkbox" id="d2"><label for="d2"><b>学生证</b>（景点半价，能省 ¥100+）</label></li>
+        <li><input type="checkbox" id="d3"><label for="d3">手机里存一份：<b>身份证照片 + 学生证照片</b>（丢了能应急）</label></li>
+        <li><input type="checkbox" id="d4"><label for="d4">预约成功截图 + 航班订单截图，建一个相册叫「南京」</label></li>
+        <li><input type="checkbox" id="d5"><label for="d5">学生证如果过期/没注册，提前找辅导员补办或开在读证明</label></li>
+      </ul>
+    </div>
+    <div class="tip"><b>身份证丢失怎么办：</b>机场有临时身份证明办理点（民航临时乘机证明，微信小程序也能办）；到南京后在「南京公安」公众号可办临时住宿证明。别慌，但一定要把身份证照片存手机。</div>
+  </section>
+
+  <!-- ============ 打包清单 ============ -->
+  <section id="pack">
+    <h2>🎒 打包清单（按类别勾，勾完一箱）</h2>
+    <p class="note" style="margin-top:-4px">原则：<b>一个登机箱 + 一个随身小包</b>。周四要带箱子去上课，越轻越好。</p>
+
+    <div class="grid2" style="margin-top:12px">
+      <div class="packcard hot">
+        <h3>🪪 证件 · 电子 <span class="n" data-count="cat-doc">0/0</span></h3>
+        <ul class="check">
+          <li data-cat="cat-doc"><input type="checkbox" id="p1"><label for="p1"><b>身份证</b>（原件，别放托运行李）</label></li>
+          <li data-cat="cat-doc"><input type="checkbox" id="p2"><label for="p2"><b>学生证</b></label></li>
+          <li data-cat="cat-doc"><input type="checkbox" id="p3"><label for="p3">银行卡 / 少量现金（¥300 应急）</label></li>
+          <li data-cat="cat-doc"><input type="checkbox" id="p4"><label for="p4">手机 + 充电器 + 数据线</label></li>
+          <li data-cat="cat-doc"><input type="checkbox" id="p5"><label for="p5"><b>充电宝</b>（≤100Wh，<b>必须随身不能托运</b>）</label></li>
+          <li data-cat="cat-doc"><input type="checkbox" id="p6"><label for="p6">耳机（飞机上用）</label></li>
+        </ul>
+      </div>
+
+      <div class="packcard">
+        <h3>👕 衣物（8–18℃，早晚凉） <span class="n" data-count="cat-cloth">0/0</span></h3>
+        <ul class="check">
+          <li data-cat="cat-cloth"><input type="checkbox" id="p7"><label for="p7"><b>薄羽绒 / 冲锋衣</b>（早晚 3–5℃，城墙和山顶风大）</label></li>
+          <li data-cat="cat-cloth"><input type="checkbox" id="p8"><label for="p8">毛衣 / 卫衣 ×2（内搭）</label></li>
+          <li data-cat="cat-cloth"><input type="checkbox" id="p9"><label for="p9"><b>运动鞋</b>（每天走 1.5–2 万步，别穿新鞋）</label></li>
+          <li data-cat="cat-cloth"><input type="checkbox" id="p10"><label for="p10">长裤 ×2 + 打底袜（早出晚归会冷）</label></li>
+          <li data-cat="cat-cloth"><input type="checkbox" id="p11"><label for="p11">帽子 / 围巾（可选但真有用）</label></li>
+          <li data-cat="cat-cloth"><input type="checkbox" id="p12"><label for="p12">内衣袜子 ×3、睡衣</label></li>
+        </ul>
+      </div>
+
+      <div class="packcard">
+        <h3>🧴 洗漱 · 日用 <span class="n" data-count="cat-daily">0/0</span></h3>
+        <ul class="check">
+          <li data-cat="cat-daily"><input type="checkbox" id="p13"><label for="p13">洗漱包（酒店有但自己带更稳）：牙刷、毛巾</label></li>
+          <li data-cat="cat-daily"><input type="checkbox" id="p14"><label for="p14">护肤 + 防晒 + 润唇膏（南京秋冬干）</label></li>
+          <li data-cat="cat-daily"><input type="checkbox" id="p15"><label for="p15"><b>保温杯</b>（景区到处有热水点）</label></li>
+          <li data-cat="cat-daily"><input type="checkbox" id="p16"><label for="p16">纸巾 / 湿巾 / 小垃圾袋</label></li>
+          <li data-cat="cat-daily"><input type="checkbox" id="p17"><label for="p17"><b>折叠伞</b>（南京秋冬偶有小雨）</label></li>
+          <li data-cat="cat-daily"><input type="checkbox" id="p18"><label for="p18">小背包（白天出门只带这个）</label></li>
+        </ul>
+      </div>
+
+      <div class="packcard">
+        <h3>💊 药品 · 其他 <span class="n" data-count="cat-med">0/0</span></h3>
+        <ul class="check">
+          <li data-cat="cat-med"><input type="checkbox" id="p19"><label for="p19">感冒药、胃药、创可贴（走多了脚会磨）</label></li>
+          <li data-cat="cat-med"><input type="checkbox" id="p20"><label for="p20">润喉片（爬中山陵、嗓子会干）</label></li>
+          <li data-cat="cat-med"><input type="checkbox" id="p21"><label for="p21">暖宝宝 ×4（早晚贴，很实用）</label></li>
+          <li data-cat="cat-med"><input type="checkbox" id="p22"><label for="p22">零食（高铁/候机垫肚子）</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tip" style="margin-top:14px">
+      <b>别带的东西：</b>大瓶液体（>100ml 不能随身，托运麻烦）、打火机、水果刀、超过 100Wh 的充电宝。<br>
+      <b>托运 or 随身：</b>充电宝只能随身；充电器、数据线随身；洗漱液体放托运。
+    </div>
+  </section>
+
+  <!-- ============ 出门检查 ============ -->
+  <section id="gopack" class="gopack">
+    <h2>🚪 周四 11:30 下课 —— 出门 5 分钟检查</h2>
+    <p class="sub">下课直接走，不要回宿舍再折腾。下面的现在就该全是勾。</p>
+    <div class="grid2">
+      <div class="packcard">
+        <h3>🔑 手上必须有</h3>
+        <ul class="check">
+          <li><input type="checkbox" id="g1"><label for="g1">身份证 + 学生证（贴身放，别塞箱子）</label></li>
+          <li><input type="checkbox" id="g2"><label for="g2">手机（电量 >60%）+ 充电宝（满电）</label></li>
+          <li><input type="checkbox" id="g3"><label for="g3">行李箱 + 小背包（前一晚收好，别落下宿舍钥匙、门禁卡）</label></li>
+          <li><input type="checkbox" id="g4"><label for="g4">耳机（飞机上用）</label></li>
+        </ul>
+      </div>
+      <div class="packcard">
+        <h3>✅ 走之前 1 分钟</h3>
+        <ul class="check">
+          <li><input type="checkbox" id="g5"><label for="g5">关插头、关窗、关灯、关水</label></li>
+          <li><input type="checkbox" id="g6"><label for="g6">室友知道你去南京、什么时候回</label></li>
+          <li><input type="checkbox" id="g7"><label for="g7">打车去白云机场（¥60–80，30–40 分钟），12:00 出发</label></li>
+          <li><input type="checkbox" id="g8"><label for="g8">到机场后：值机 → 安检 → 找登机口（提前 90 分钟到）</label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 手机设置 ============ -->
+  <section id="tech">
+    <h2>📱 手机上先弄好的 6 件事</h2>
+    <div class="box">
+      <ul class="check">
+        <li><input type="checkbox" id="m1"><label for="m1"><b>支付宝/微信「乘车码」</b> —— 南京地铁、公交、S1 机场线都能刷，不用买卡</label></li>
+        <li><input type="checkbox" id="m2"><label for="m2"><b>高德地图</b> —— 南京地铁换乘、步行导航全靠它；提前下好南京离线地图</label></li>
+        <li><input type="checkbox" id="m3"><label for="m3"><b>12306</b> —— 万一航班取消，立刻查高铁备选（南京南 → 广州南）</label></li>
+        <li><input type="checkbox" id="m4"><label for="m4"><b>航旅纵横 / 携程</b> —— 值机、看航班动态、改签</label></li>
+        <li><input type="checkbox" id="m5"><label for="m5">关注公众号：<b>中山陵园风景区</b>、<b>南京博物院</b>（预约全靠它）</label></li>
+        <li><input type="checkbox" id="m6"><label for="m6">建一个相册「南京」，把预约截图、身份证照片、酒店地址都放进去</label></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 天气 ============ -->
+  <section id="weather">
+    <h2>🌡️ 11 月中旬南京天气参考</h2>
+    <table>
+      <tr><th>时段</th><th>气温</th><th>体感 / 应对</th></tr>
+      <tr><td>早晨（7–9 点）</td><td>8–11℃</td><td>凉，钟山、城墙、栖霞山都在这个时段，<b>薄羽绒/冲锋衣 + 围巾</b></td></tr>
+      <tr><td>白天（10–16 点）</td><td>15–18℃</td><td>太阳下挺暖和，走路会热，穿方便脱的外套</td></tr>
+      <tr><td>傍晚后（17 点以后）</td><td>10–13℃</td><td>降温快，看夜景记得加衣</td></tr>
+      <tr><td>降雨</td><td>偶有小雨</td><td>带折叠伞；雨天把钟山换成南博/博物馆</td></tr>
+    </table>
+    <div class="tip"><b>11/11 晚再查一次预报</b>（离出发只有一天，预报很准）。11 月中旬栖霞山枫叶刚开始变色，不是最盛期，如果当天不想爬山，可以换成「朝天宫 + 六朝博物馆」的室内半天。</div>
+  </section>
+
+  <!-- ============ 应急 ============ -->
+  <section id="emerg">
+    <h2>🆘 应急电话与预案</h2>
+
+    <div class="emerg" style="margin-bottom:14px">
+      <div class="erow"><div class="ic">🚨</div><div class="ec"><b>报警 / 急救 / 火警</b><p>全国通用：<span class="call">110 / 120 / 119</span></p></div></div>
+      <div class="erow"><div class="ic">🏛️</div><div class="ec"><b>南京大屠杀纪念馆（确认闭馆情况）</b><p><span class="call">025-86612230</span>（信息来源，行程期间 11.9–12.13 闭馆）</p></div></div>
+      <div class="erow"><div class="ic">🌺</div><div class="ec"><b>雨花台烈士陵园咨询</b><p><span class="call">025-52411707</span> / 讲解预约 025-68783067</p></div></div>
+      <div class="erow"><div class="ic">✈️</div><div class="ec"><b>航空公司客服</b><p>买完票就把 <b>航空公司名字 + 订单号</b> 存进备忘录，改签/取消第一时间打电话</p></div></div>
+      <div class="erow"><div class="ic">🏫</div><div class="ec"><b>学校辅导员 / 室友</b><p>出发前把行程发一份，晚归或延误时有人帮你报备</p></div></div>
+    </div>
+
+    <div class="box">
+      <p style="margin:0 0 8px"><b>① 周一航班延误 / 取消怎么办（最要命的情况）</b><br>立刻按顺序做：<b>①</b> 打航司电话改签更早的航班；<b>②</b> 查高铁：南京南 → 广州南 G1745 是 15:52 开、23:17 到（会超时），所以更稳的是改签到 <b>周日晚的航班</b>；<b>③</b> 实在回不来，第一时间给辅导员打电话报备，别硬撑。</p>
+      <p style="margin:0 0 8px"><b>② 赶不上飞机</b><br>值机截止一般是起飞前 45 分钟。真赶不上就立刻在 App 上改签，别在机场干等。周四去程延误的话，南京那晚行程顺延，不影响后面。</p>
+      <p style="margin:0 0 8px"><b>③ 身份证丢了</b><br>微信搜「民航临时乘机证明」小程序可办电子临时乘机证明；酒店入住找「南京公安」公众号办临时住宿证明。身份证照片存在手机里就是为这个。</p>
+      <p style="margin:0 0 8px"><b>④ 东西丢了 / 被偷</b><br>先打 110 报案拿回执（保险和挂失都要），银行卡立刻电话挂失，手机用「查找」定位并远程锁定。</p>
+      <p style="margin:0"><b>⑤ 生病 / 崴脚</b><br>南京市区三甲医院多（鼓楼医院、江苏省人民医院都在地铁沿线）；景点医务室可处理小伤，走不动就打车，别勉强爬山。</p>
+    </div>
+  </section>
+
+  <!-- ============ 返回行程 ============ -->
+  <section id="back">
+    <div class="box" style="text-align:center;background:linear-gradient(135deg,#fdf6ec,#f8efe0);border-color:#e6d6bf">
+      <b style="font-size:15px">准备好了就出发 🚄</b>
+      <p class="note" style="margin:6px 0 12px">清单勾完 → 回到行程主页按天走</p>
+      <a href="南京5日行程.html" style="display:inline-block;background:var(--red);color:#fff;text-decoration:none;
+        font-weight:800;font-size:14px;padding:11px 26px;border-radius:999px;box-shadow:0 6px 18px rgba(158,43,37,.3)">
+        打开南京 5 日行程 →
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <b>南京行前准备</b> · 11.12 本周四出发 · 广师大白云校区定制<br>
+    准备进度自动保存在这台设备上 ｜ Ctrl+P 可直接打印成纸质清单
+  </footer>
+</div>
+
+<a href="#" class="backtop" title="回到顶部">↑</a>
+<div class="toast" id="toast">进度已保存</div>
+
+<script>
+(function(){
+  // 倒计时
+  var start = new Date(2026, 10, 12, 0, 0, 0);
+  var days = Math.ceil((start - new Date()) / 86400000);
+  var cd = document.getElementById('cd');
+  if (cd) cd.textContent = days > 0 ? days : (days === 0 ? '今天' : '已出发');
+
+  var KEY = 'nanjing-pretrip-v1';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) {}
+
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+
+  function save(){
+    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e) {}
+  }
+  function refresh(){
+    var packBoxes = boxes.filter(function(b){ var li = b.closest('li'); return li && li.getAttribute('data-cat'); });
+    var total = packBoxes.length;
+    var done = packBoxes.filter(function(b){ return b.checked; }).length;
+    var pct = total ? Math.round(done / total * 100) : 0;
+    // 总进度
+    var fill = document.getElementById('barFill');
+    var pctEl = document.getElementById('pct');
+    if (fill) fill.style.width = pct + '%';
+    if (pctEl) pctEl.textContent = done + '/' + total + ' · ' + pct + '%';
+    // 分类计数
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var cat = el.getAttribute('data-count');
+      var list = boxes.filter(function(b){ return b.closest('li') && b.closest('li').getAttribute('data-cat') === cat; });
+      var d = list.filter(function(b){ return b.checked; }).length;
+      el.textContent = d + '/' + list.length;
+      el.classList.toggle('ok', list.length > 0 && d === list.length);
+    });
+  }
+  function flash(){
+    if (!toast) return;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 1100);
+  }
+
+  boxes.forEach(function(b){
+    if (saved[b.id]) { b.checked = true; var li = b.closest('li'); if (li) li.classList.add('done'); }
+    b.addEventListener('change', function(){
+      saved[b.id] = b.checked;
+      var li = b.closest('li'); if (li) li.classList.toggle('done', b.checked);
+      save(); refresh(); flash();
+    });
+  });
+  refresh();
+
+  // 点右上角百分比 = 一键重置全部勾选
+  var pctEl2 = document.getElementById("pct");
+  if (pctEl2) {
+    pctEl2.title = "点这里重置全部勾选";
+    var armed = false, armTimer = null;
+    pctEl2.addEventListener("click", function(){
+      if (!armed) {
+        armed = true;
+        pctEl2.textContent = "再点一次清空";
+        pctEl2.style.color = "#9e2b25";
+        clearTimeout(armTimer);
+        armTimer = setTimeout(function(){
+          armed = false; pctEl2.style.color = ""; refresh();
+        }, 3000);
+        return;
+      }
+      clearTimeout(armTimer); armed = false; pctEl2.style.color = "";
+      boxes.forEach(function(b){ b.checked = false; var li = b.closest("li"); if (li) li.classList.remove("done"); });
+      for (var k in saved) { if (saved.hasOwnProperty(k)) delete saved[k]; }
+      save(); refresh(); flash();
+    });
+  }
+})();
+</script>
+</body>
+</html>

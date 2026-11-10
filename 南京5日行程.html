@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京 5 日行程 · 11.12–11.16 · 广师大白云校区出发</title>
+<style>
+:root{
+  --red:#9e2b25; --red-d:#7c1f1a; --gold:#c9a227; --ink:#22201e; --ink-2:#57514c;
+  --line:#e7ded4; --bg:#f6f2ec; --card:#fffdf9; --green:#2f6b4f; --blue:#2a5b7d;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+  radial-gradient(1200px 500px at 80% -10%, #f3e3d0 0%, transparent 60%),
+  radial-gradient(900px 400px at -10% 5%, #efe6d9 0%, transparent 55%),
+  var(--bg);
+  color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:80px}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
+
+/* ---------- 头部 ---------- */
+header{background:linear-gradient(135deg,var(--red-d) 0%,var(--red) 55%,#b8452f 100%);color:#fff;
+  padding:30px 0 26px;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+header::after{content:"金陵";position:absolute;right:-6px;bottom:-34px;font-size:120px;font-weight:900;
+  color:rgba(255,255,255,.07);letter-spacing:-6px;pointer-events:none;font-family:"Songti SC","SimSun",serif}
+header .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12px;letter-spacing:3px;opacity:.85;margin:0 0 8px}
+h1{margin:0;font-size:30px;line-height:1.25;font-weight:800;letter-spacing:.5px;
+  font-family:"Songti SC","SimSun","PingFang SC",serif}
+h1 small{display:block;font-size:13px;font-weight:400;opacity:.85;margin-top:8px;letter-spacing:1px;
+  font-family:-apple-system,"PingFang SC",sans-serif}
+.countdown{margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-size:13px;backdrop-filter:blur(4px)}
+.countdown b{color:#ffe9a8;font-size:16px;font-variant-numeric:tabular-nums}
+
+/* ---------- 概览卡 ---------- */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:-24px auto 22px;position:relative;z-index:2}
+@media(min-width:620px){.cards{grid-template-columns:repeat(4,1fr)}.cards .card:nth-child(5){grid-column:span 4;display:flex;align-items:baseline;gap:10px}.cards .card:nth-child(5) .k,.cards .card:nth-child(5) .v,.cards .card:nth-child(5) .s{margin:0}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 13px;box-shadow:var(--shadow)}
+.card .k{font-size:11px;color:var(--ink-2);letter-spacing:1px}
+.card .v{font-size:16px;font-weight:800;margin-top:2px;color:var(--red-d);font-variant-numeric:tabular-nums}
+.card .s{font-size:11px;color:var(--ink-2);margin-top:1px}
+
+/* ---------- 吸顶导航 ---------- */
+nav.tabs{position:sticky;top:0;z-index:20;background:rgba(246,242,236,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-bottom:20px}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:9px;padding-bottom:9px;scrollbar-width:none}
+nav.tabs .wrap::-webkit-scrollbar{display:none}
+nav.tabs a{flex:0 0 auto;text-decoration:none;color:var(--ink-2);font-size:13px;font-weight:600;
+  padding:6px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+nav.tabs a:hover{background:#fff;border-color:var(--line);color:var(--red)}
+nav.tabs a.hot{color:#fff;background:var(--red);border-color:var(--red)}
+
+/* ---------- 区块 ---------- */
+section{margin:0 0 26px}
+h2{font-size:19px;margin:0 0 12px;display:flex;align-items:center;gap:9px;
+  font-family:"Songti SC","SimSun",serif;letter-spacing:.5px}
+h2::before{content:"";width:4px;height:19px;background:var(--red);border-radius:2px;display:inline-block}
+.note{font-size:13px;color:var(--ink-2)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+
+/* ---------- 交通表 ---------- */
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f3ece2;font-size:12px;letter-spacing:.5px;color:var(--ink-2);font-weight:700}
+tr:last-child td{border-bottom:0}
+td b{color:var(--red-d)}`ntd:first-child{white-space:nowrap}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;background:#f0e6d6;
+  color:#7a5a1f;margin-left:4px;font-weight:600;white-space:nowrap}
+.tag.g{background:#e3efe7;color:var(--green)}
+.tag.b{background:#e3ecf4;color:var(--blue)}
+.tag.r{background:#f6e2df;color:var(--red)}
+
+/* ---------- 时间轴 ---------- */
+details.day{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  margin-bottom:14px;overflow:hidden;scroll-margin-top:64px}
+details.day>summary{list-style:none;cursor:pointer;padding:15px 16px;display:flex;align-items:center;gap:12px;
+  background:linear-gradient(180deg,#fffdf9,#faf5ee);border-bottom:1px solid transparent;user-select:none}
+details.day[open]>summary{border-bottom-color:var(--line)}
+details.day>summary::-webkit-details-marker{display:none}
+.dnum{flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;display:grid;
+  place-items:center;font-weight:800;font-size:12px;line-height:1.05;text-align:center;
+  font-family:"Songti SC","SimSun",serif;letter-spacing:.5px}
+.dnum small{display:block;font-size:10px;opacity:.85;font-family:-apple-system,sans-serif}
+.dhead{flex:1;min-width:0}
+.dhead .t{font-weight:800;font-size:16px}
+.dhead .t em{font-style:normal;font-size:11px;font-weight:600;color:#fff;background:var(--gold);
+  padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
+.dhead .s{font-size:12.5px;color:var(--ink-2);margin-top:1px}
+.chev{flex:0 0 auto;color:#b5a89a;transition:transform .2s;font-size:12px}
+details.day[open] .chev{transform:rotate(180deg)}
+
+ol.tl{list-style:none;margin:0;padding:4px 16px 16px}
+ol.tl li{padding:10px 0;border-bottom:1px dashed #efe7dc}
+ol.tl li:last-child{border-bottom:0}
+ol.tl .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+ol.tl time{flex:0 0 auto;display:inline-block;font-size:12px;font-weight:800;color:#fff;background:var(--red);
+  border-radius:6px;padding:1px 7px;font-variant-numeric:tabular-nums;letter-spacing:.3px}
+ol.tl li .it{font-weight:700;font-size:14.5px;flex:1;min-width:0}
+ol.tl li .ds{font-size:12.5px;color:var(--ink-2);margin-top:4px}
+ol.tl li .ds b{color:var(--ink);font-weight:600}
+ol.tl .tip{margin-top:8px}
+.price{display:inline-block;font-size:11px;font-weight:700;color:var(--green);background:#e9f2ec;
+  border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:1px;font-variant-numeric:tabular-nums}
+.price.red{color:var(--red-d);background:#f7e6e3}
+.tip{background:#fbf3e2;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:8px 12px;
+  margin-top:8px;font-size:12.5px;color:#6b5426}
+.tip b{color:#8a6413}
+.daynote{margin:0 16px 16px;font-size:12.5px;color:var(--ink-2);background:#faf6ef;border:1px dashed #e3d5c2;
+  border-radius:10px;padding:10px 12px}
+
+/* ---------- 清单 ---------- */
+ul.check{list-style:none;margin:0;padding:0}
+ul.check li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed #efe7dc;font-size:13.5px}
+ul.check li:last-child{border-bottom:0}
+ul.check input{margin-top:4px;width:17px;height:17px;accent-color:var(--red);flex:0 0 auto;cursor:pointer}
+ul.check label{cursor:pointer;flex:1}
+ul.check .when{font-size:11.5px;color:#fff;background:var(--red-d);border-radius:999px;padding:1px 8px;
+  margin-right:6px;font-weight:700;white-space:nowrap;display:inline-block}
+ul.check li.done label{text-decoration:line-through;color:#a79b8c}
+
+/* ---------- 预算 ---------- */
+.budget{display:grid;gap:8px}
+.brow{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13.5px;
+  padding:8px 0;border-bottom:1px dashed #efe7dc}
+.brow:last-child{border-bottom:0}
+.brow .l{color:var(--ink-2)}
+.brow .l b{color:var(--ink);display:block;font-size:13.5px}
+.brow .r{font-weight:800;color:var(--red-d);font-variant-numeric:tabular-nums;white-space:nowrap}
+.total{background:linear-gradient(135deg,var(--red-d),var(--red));color:#fff;border-radius:12px;padding:14px 16px;
+  display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.total .l{font-size:13px;opacity:.9}
+.total .r{font-size:22px;font-weight:900;font-variant-numeric:tabular-nums;color:#ffe9a8}
+
+/* ---------- 其他 ---------- */
+.pill{display:inline-block;font-size:11.5px;background:#eee5d8;border-radius:999px;padding:2px 10px;
+  margin:2px 4px 2px 0;color:#6b5a42;font-weight:600}
+.grid2{display:grid;gap:12px}
+@media(min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+a{color:var(--blue)}
+footer{text-align:center;font-size:12px;color:#a09484;margin:34px 0 10px;line-height:1.9}
+footer b{color:var(--red)}
+.backlink{margin-left:10px;color:#fff;font-size:12.5px;text-decoration:none;border:1px solid rgba(255,255,255,.3);
+  border-radius:999px;padding:6px 13px;display:inline-block;vertical-align:middle;white-space:nowrap}
+.backlink:hover{background:rgba(255,255,255,.14)}
+.backtop{position:fixed;right:16px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--red);
+  color:#fff;display:grid;place-items:center;text-decoration:none;box-shadow:0 6px 18px rgba(158,43,37,.35);
+  font-size:18px;z-index:30;border:none;cursor:pointer}
+@media print{
+  body{background:#fff;padding:0}
+  nav.tabs,.backtop{display:none}
+  details.day{break-inside:avoid;box-shadow:none}
+  header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">NANJING · 金陵 · 六朝古都</p>
+    <h1>南京 4 晚 5 日行程
+      <small>11月12日（周四）— 11月16日（周一） · 广师大白云校区出发 · 周一 23:30 前返校</small>
+    </h1>
+    <div>
+      <div class="countdown">距离出发还有 <b id="cd">—</b> 天</div>
+      <a class="backlink" href="南京行前准备.html">🎒 行前准备清单 →</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="cards">
+    <div class="card"><div class="k">出行时长</div><div class="v">4晚5天</div><div class="s">有效游玩 ≈ 3.5 天</div></div>
+    <div class="card"><div class="k">单人预算</div><div class="v">¥4,300</div><div class="s">临时订票，偏高</div></div>
+    <div class="card"><div class="k">住宿</div><div class="v">4 晚</div><div class="s">新街口/张府园一带</div></div>
+    <div class="card"><div class="k">预约状态</div><div class="v">已过窗口</div><div class="s">刷余票 / 当天捡漏</div></div>
+    <div class="card" style="border-color:#e8b9b2;background:#fdf3f1"><div class="k">硬约束</div><div class="v" style="color:#9e2b25">23:30 前</div><div class="s">周一飞回 · 白云校区门禁</div></div>
+  </div>
+
+  <div class="box" style="border-left:4px solid #9e2b25;background:#fdf3f1;margin-bottom:20px">
+    <b style="color:#7c1f1a">⚠️ 行程已更新（3 处重大变更）</b>
+    <p class="note" style="margin:8px 0 0;color:#5a3a34">
+      <b>① 大屠杀纪念馆去不了了：</b>官方公告，侵华日军南京大屠杀遇难同胞纪念馆因筹备重要活动及场馆设备检修，<b>2026 年 11 月 9 日 — 12 月 13 日闭馆</b>，你的行程期间完全不开。已改为周六上午 <b>雨花台烈士陵园</b>（免费、无需预约，同为南京最重要的红色纪念地，和老城南顺路）。<br>
+      <b>② 周一 23:30 前返校：</b>返程航班必须往前挪。<b>订 17:30–18:00 从禄口起飞的航班</b>（落地白云约 20:00，打车 30–40 分钟回白云校区，20:40 前到校）；最晚 19:00，<b>20:00 之后的一律不要订</b>。<br>
+      <b>③ 时间提前到本周末（重要）：</b>行程改为 <b>11/12 周四 → 11/16 周一</b>，只剩 2 天准备。机票现在订会贵一些，<b>今天就把往返票和酒店锁掉</b>；中山陵、南京博物院这两个原本「提前 7 天放票」的预约<b>已经过了窗口</b>，只能抢余票 / 当天捡漏，约不到就走下面给的替代方案（不影响整体行程）。
+    </p>
+  </div>
+  <nav class="tabs">
+    <div class="wrap">
+      <a href="#交通" class="hot">✈️ 怎么去</a>
+      <a href="#d1">周四 · 出发</a>
+      <a href="#d2">周五 · 钟山</a>
+      <a href="#d3">周六 · 雨花台</a>
+      <a href="#d4">周日 · 城墙</a>
+      <a href="#d5">周一 · 栖霞山</a>
+      <a href="#预约">⏰ 抢票</a>
+      <a href="#预算">💰 预算</a>
+      <a href="#行李">🎒 清单</a>
+      <a href="#备注">❗ 备选</a>
+      <a href="南京行前准备.html" style="background:#f0e6d6;color:#7a5a1f;border-color:#e3d5c2">🎒 行前准备</a>
+    </div>
+  </nav>
+
+  <!-- ================= 交通 ================= -->
+  <section id="交通">
+    <h2>怎么去南京（周四 11:30 下课 → 机场）</h2>
+    <p class="note" style="margin-top:-4px"><b>你在白云校区（江高镇）</b>，离白云机场近，12:00 从学校打车约 30–40 分钟就能到机场（¥60–80），地铁 3 号线约 60 分钟。所以<b>订 15:00–16:30 起飞的航班</b>完全来得及。⚠️ 这次只有 2 天准备，<b>机票价格会比提前两周订高不少</b>；如果机票贵得离谱，改高铁 G638（14:48 发车，¥782）也是稳的选择。广州到南京 1,150 km 左右，飞机 ≈ 2 小时，直达高铁 7 小时 44 分，普速卧铺 22 小时。</p>
+
+    <table style="margin-top:10px">
+      <tr><th style="width:74px">方式</th><th>车次 / 时段</th><th>用时</th><th>票价</th></tr>
+      <tr>
+        <td><b>飞机</b><span class="tag g">推荐</span></td>
+        <td>广州白云 → 南京禄口<br>选 16:00–17:30 起飞的班次</td>
+        <td>飞行 2h05<br>+进出机场 3h</td>
+        <td>¥500–900<br><span class="tag">提前2周≈6折</span></td>
+      </tr>
+      <tr>
+        <td><b>高铁</b></td>
+        <td>G638 广州南 <b>14:48</b> → 南京南 22:32</td>
+        <td>7h44</td>
+        <td>二等座 ¥782</td>
+      </tr>
+      <tr>
+        <td><b>普速卧铺</b><span class="tag b">省钱</span></td>
+        <td>T152 广州白云 <b>10:43</b> → 南京 次日 08:47</td>
+        <td>22h04</td>
+        <td>硬卧 ¥351<br>硬座 ¥192</td>
+      </tr>
+      <tr>
+        <td><b>返程</b></td>
+        <td>禄口 → 白云，周一 20:00 后航班<br>或 G1745 南京南 15:52 → 广州南 23:17</td>
+        <td>2h05</td>
+        <td>¥600–1000<br>高铁 ¥782</td>
+      </tr>
+    </table>
+
+    <div class="grid2" style="margin-top:14px">
+      <div class="box">
+        <b>🛫 方案 A · 飞过去（推荐，你已满足条件）</b>
+        <p class="note" style="margin:6px 0 0">11:30 下课 → 12:00 拿行李打车去白云机场（30–40 分钟）→ 13:00 到机场 → <b>15:00–16:30 起飞</b> → 17:00–18:30 落地禄口 → 18:30–19:30 到酒店。周四晚上能逛夫子庙夜景 + 吃顿正经晚饭。<br><b>替代：</b>G638 广州南 14:48 → 南京南 22:32，22:30 后直接睡，周五照常早起。</p>
+      </div>
+      <div class="box">
+        <b>🚆 方案 B · 高铁直达</b>
+        <p class="note" style="margin:6px 0 0">14:48 广州南发车，22:32 到南京南，当晚只能睡。适合<b>不想坐飞机 / 提前买不到机票</b>的情况，价格稳定、准点率高。<br>但周五必须早起补行程。</p>
+      </div>
+      <div class="box">
+        <b>🛏️ 方案 C · 穷游卧铺</b>
+        <p class="note" style="margin:6px 0 0">T152 硬卧 ¥351，睡一觉周五 08:47 到南京站，出站就是玄武湖。往返最省 ≈ ¥700。代价是 22 小时、硬卧体验一般，适合预算优先。<b>注意它 10:43 发车，和 11:30 的课冲突</b>，得请假或选别的车。</p>
+      </div>
+      <div class="box">
+        <b>⏰ 周一返程（23:30 返校硬约束）</b>
+        <p class="note" style="margin:6px 0 0">禄口 → 白云约 2h05，白云机场 → 白云校区打车 30–40 分钟。<br><b>倒推：</b>要在 23:30 前到宿舍，需 21:00 前落地白云 → <b>订 18:00–18:30 从禄口起飞的航班</b>；最晚不超过 19:00（落地约 21:20，打车 22:10 到校，缓冲 80 分钟）。<br><b>千万别订 20:00 以后的</b>，落地 22:20 以后 + 等行李 + 打车，很可能超时。</p>
+      </div>
+      <div class="box">
+        <b>📍 落地后进城</b>
+        <p class="note" style="margin:6px 0 0">禄口机场 → 市区：<b>地铁 S1 号线</b>到南京南站转 1 号线（约 50 分钟，¥7–8），或机场大巴 1 号线到南京站/城东（¥20）。<br><b>南京南站</b>：1/3 号线(S1)直达新街口约 25 分钟。<br><b>南京站</b>：1 号线到新街口 4 站。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 住哪 ================= -->
+  <section id="住宿">
+    <h2>住哪儿（4 晚）</h2>
+    <table>
+      <tr><th>区域</th><th>优点</th><th>参考价</th></tr>
+      <tr><td><b>新街口 / 张府园</b><span class="tag g">首选</span></td><td>1、2、3 号线交汇，去哪都方便；商场多、晚上不荒；去机场/南站都顺</td><td>¥220–350/晚</td></tr>
+      <tr><td><b>夫子庙 / 老门东</b></td><td>夜景和吃的都在楼下，氛围最好；缺点是周末吵、离钟山远</td><td>¥200–320/晚</td></tr>
+      <tr><td><b>南京南站</b></td><td>最便宜，适合坐高铁往返；但每天要花 40 分钟通勤</td><td>¥150–230/晚</td></tr>
+    </table>
+    <div class="tip" style="margin-top:12px"><b>订房建议：</b>4 晚连住同一家（省得拖箱子），选 1 号线「张府园」或「新街口」站 500 m 内的连锁（如家/汉庭/全季/亚朵），周四 11 月 12 日不是节假日，价格正常。学生党可以看下青旅双人间，¥150 左右能拿下。</div>
+  </section>
+
+  <!-- ================= D1 ================= -->
+  <details class="day" id="d1" open>
+    <summary>
+      <div class="dnum">DAY<small>01</small></div>
+      <div class="dhead">
+        <div class="t">周四 11/12 · 出发日 <em>半天</em></div>
+        <div class="s">白云校区 → 白云机场 → 南京 · 落地先吃再逛</div>
+      </div>
+      <div class="chev">▼</div>
+    </summary>
+    <ol class="tl">
+      <li><div class="hd"><time>11:30</time><span class="it">下课 → 回宿舍拿行李</span></div><div class="ds">行李前一晚收好。证件：<b>身份证 + 学生证</b>（南京大部分景点学生半价）。白云校区在江高镇，到白云机场比市区近得多。</div></li>
+      <li><div class="hd"><time>12:00</time><span class="it">吃个快饭 → 打车去白云机场</span></div><div class="ds">打车/网约车 <b>30–40 分钟，¥60–80</b>（白云校区 → 白云机场约 25 km）；赶时间就打车，别坐地铁（3 号线约 60 分钟）。13:00 前到机场即可。</div></li>
+      <li><div class="hd"><time>13:00</time><span class="it">白云机场值机安检</span></div><div class="ds">订 <b>15:00–16:30 起飞</b>的航班（提前 90 分钟到）。临时订票价格会偏高，机票太贵就对比高铁 G638 14:48 发车 ¥782。</div></li>
+      <li><div class="hd"><time>17:20</time><span class="it">落地南京禄口机场</span></div><div class="ds">取行李 → <b>地铁 S1 号线</b>（¥7）到南京南站 → 换 1 号线到新街口/张府园，约 70 分钟；或机场大巴 1 号线。</div></li>
+      <li><div class="hd"><time>18:40</time><span class="it">酒店 check-in + 放行李</span></div><div class="ds">周四晚酒店价格正常，办完入住轻装出门。</div></li>
+      <li><div class="hd"><time>19:20</time><span class="it">晚饭：新街口 / 明瓦廊</span></div><div class="ds">正宗第一顿：鸭血粉丝汤 + 盐水鸭 + 赤豆元宵，人均 ¥40–60。吃饱了再逛。</div></li>
+      <li><div class="hd"><time>20:20</time><span class="it">夫子庙 · 秦淮河夜游</span></div><div class="ds">地铁 3 号线「夫子庙」站。逛<b>乌衣巷、江南贡院</b>外围、文德桥看灯；画舫夜游 ¥80–100（想省就岸边走走，夜景一样好看）。</div><div class="tip"><b>备选：</b>如果航班早、到得早，可以先去<b>中华门</b>看夜景灯光（不进瓮城、免费看外观），或去<b>老门东</b>吃宵夜，把周六的人流错开。</div></li>
+      <li><div class="hd"><time>22:30</time><span class="it">回酒店休息</span></div><div class="ds">明早 07:00 起，今晚洗洗睡。</div></li>
+    </ol>
+    <div class="daynote">💰 今日花费 ≈ 机票 ¥900（临时订价，偏高）+ 打车 ¥70 + 地铁 ¥20 + 夜游 ¥90 + 吃饭 ¥55 ≈ <b>¥1,135</b><br>💡 机票太贵就改高铁 G638（14:48 发车，22:32 到南京南，¥782），当晚直接睡觉，周五照常走。</div>
+  </details>
+
+  <!-- ================= D2 ================= -->
+  <details class="day" id="d2">
+    <summary>
+      <div class="dnum">DAY<small>02</small></div>
+      <div class="dhead">
+        <div class="t">周五 11/13 · 钟山 & 民国轴线 <em>全天</em></div>
+        <div class="s">中山陵 → 明孝陵 → 总统府 → 1912 街区</div>
+      </div>
+      <div class="chev">▼</div>
+    </summary>
+    <ol class="tl">
+      <li><div class="hd"><time>07:00</time><span class="it">起床 · 地铁 2 号线到「苜蓿园」站</span></div><div class="ds">苜蓿园站 1 号口出 → 步行/景区观光车进钟山风景区。</div></li>
+      <li><div class="hd"><time>08:20</time><span class="it">中山陵（免费，需预约）</span></div><div class="ds">爬 392 级台阶，博爱坊 → 陵门 → 祭堂。8:30 开门就进，人最少、光线最好。<b>预约：</b>放票窗口是提前 7 天 16:00（你的场次在 11/6 已放票），现在只能刷余票/候补；<b>约不到就跳过，改去灵谷寺</b>（¥35，民国建筑+灵谷塔），动线更顺。<span class="price">免费</span></div></li>
+      <li><div class="hd"><time>10:00</time><span class="it">音乐台 + 灵谷寺（可选）</span></div><div class="ds">音乐台喂鸽子（¥10）拍民国风大片；时间紧就跳过灵谷寺，直接去明孝陵。</div></li>
+      <li><div class="hd"><time>10:40</time><span class="it">明孝陵 · 石象路</span></div><div class="ds">钟山最值得的 600 米：<b>石象路</b>秋天乌桕红、银杏黄，是南京秋景天花板。沿神道走完到陵宫。<span class="price">¥70（学生半价）</span></div></li>
+      <li><div class="hd"><time>12:20</time><span class="it">午饭：苜蓿园/下马坊一带</span></div><div class="ds">景区周边贵且难吃，建议地铁 2 号线回「大行宫」附近吃，为下午总统府做准备；或带面包在景区解决。</div></li>
+      <li><div class="hd"><time>14:00</time><span class="it">总统府（南京中国近代史遗址博物馆）</span></div><div class="ds">地铁 2/3 号线「大行宫」站 5 号口。看太平天国天王府、孙中山临时大总统办公室、煦园。约 2 小时。<span class="price red">¥35（学生半价，需确认周一闭馆）</span></div></li>
+      <li><div class="hd"><time>16:30</time><span class="it">1912 街区 + 长江路</span></div><div class="ds">总统府隔壁就是 1912 民国建筑群，拍街景、喝杯咖啡歇脚；长江路还有<b>六朝博物馆</b>（¥30，17:00 停止入场）。</div></li>
+      <li><div class="hd"><time>18:00</time><span class="it">晚饭：新街口 / 明瓦廊</span></div><div class="ds">「南京大牌档」人均 ¥60（美龄粥、糖芋苗、狮子头）；或去明瓦廊小吃一条街（人均 ¥30）。</div></li>
+      <li><div class="hd"><time>19:30</time><span class="it">新街口夜景 + 德基广场</span></div><div class="ds">地铁 1/2 号线新街口站，24 个出口的迷宫，逛完回酒店。</div></li>
+    </ol>
+    <div class="daynote">💰 今日 ≈ 明孝陵 ¥35（学生）+ 总统府 ¥17.5 + 交通 ¥15 + 吃饭 ¥90 ≈ <b>¥160</b><br>⚠️ 中山陵要去公众号刷余票；<b>约不到就跳过</b>，把时间给灵谷寺。总统府现场买票即可。</div>
+  </details>
+
+  <!-- ================= D3 ================= -->
+  <details class="day" id="d3">
+    <summary>
+      <div class="dnum">DAY<small>03</small></div>
+      <div class="dhead">
+        <div class="t">周六 11/14 · 雨花台 + 老城南 <em>全天</em></div>
+        <div class="s">雨花台烈士陵园 → 老门东 → 中华门 → 夫子庙夜游</div>
+      </div>
+      <div class="chev">▼</div>
+    </summary>
+    <ol class="tl">
+      <li><div class="hd"><time>07:40</time><span class="it">起床 · 地铁 1 号线「中华门」站</span></div><div class="ds">1 号线到中华门站 2 号口，步行/打车 10 分钟到雨花台北门。全程不用抢票，比纪念馆轻松太多。</div></li>
+      <li><div class="hd"><time>08:30</time><span class="it">雨花台烈士陵园 · 烈士纪念馆</span></div><div class="ds">北大门 → 烈士就义群雕 → 烈士纪念碑 → 倒影池 → <b>雨花台烈士纪念馆</b>。园区免费、<b>入园无需预约</b>；纪念馆 8:30 开、16:00 停止入馆，<b>周一闭馆</b>。11 月中旬园区银杏刚开始黄，红枫还没到最盛，但胜在人少。<span class="price">免费</span></div><div class="tip"><b>为什么换成这里：</b>侵华日军南京大屠杀遇难同胞纪念馆 <b>2026 年 11 月 9 日 — 12 月 13 日闭馆</b>（筹备重要活动 + 场馆设备检修），整个行程期间都不开。雨花台是南京另一处最重要的红色纪念地，免费、不用抢票，且和老城南在同一条动线上。</div></li>
+      <li><div class="hd"><time>10:40</time><span class="it">打车/地铁去老门东（约 15 分钟）</span></div><div class="ds">中华门站坐 1 号线转 3 号线到「武定门」，或直接打车 ¥15。</div></li>
+      <li><div class="hd"><time>11:10</time><span class="it">逛老门东（人少时段）</span></div><div class="ds">青砖小巷、芥子园、骏惠书屋。这个点游客还不多，拍照最舒服。</div></li>
+      <li><div class="hd"><time>12:00</time><span class="it">午饭：老门东小吃</span></div><div class="ds"><b>蒋有记锅贴、司记豆腐脑、小郑酥烧饼</b>，人均 ¥40。</div></li>
+      <li><div class="hd"><time>13:30</time><span class="it">中华门瓮城 + 南京城墙</span></div><div class="ds">世界现存规模最大的古城堡，藏兵洞可以钻。上城墙走到<b>东水关</b>段看秦淮河。<span class="price red">¥50（学生半价，含城墙博物馆）</span></div></li>
+      <li><div class="hd"><time>15:30</time><span class="it">南京城墙博物馆（免费）</span></div><div class="ds">就在中华门旁边，看 650 年城砖铭文，空调很足，正好歇脚。<b>周一闭馆，周六正常开。</b></div></li>
+      <li><div class="hd"><time>16:40</time><span class="it">夫子庙 · 江南贡院 · 科举博物馆</span></div><div class="ds">地铁 3 号线「夫子庙」站。科举博物馆在贡院地下，设计很强（¥50，学生半价）。</div></li>
+      <li><div class="hd"><time>19:00</time><span class="it">秦淮河画舫夜游 + 晚饭</span></div><div class="ds">白天看庙、晚上看灯。画舫 ¥80–100；晚饭吃<b>鸭油酥烧饼、牛肉锅贴、桂花糖芋苗</b>。</div></li>
+    </ol>
+    <div class="daynote">💰 今日 ≈ 中华门 ¥25 + 科举博物馆 ¥25（学生）+ 画舫 ¥90 + 吃饭 ¥100 + 交通 ¥20 ≈ <b>¥260</b><br>✅ 今天<b>一个预约都不用抢</b>——纪念馆闭馆反而省掉了全程最难的一步，雨花台免费入园。</div>
+  </details>
+
+  <!-- ================= D4 ================= -->
+  <details class="day" id="d4">
+    <summary>
+      <div class="dnum">DAY<small>04</small></div>
+      <div class="dhead">
+        <div class="t">周日 11/15 · 城墙湖景 + 南京博物院 <em>全天·轻松</em></div>
+        <div class="s">鸡鸣寺 → 台城城墙 → 玄武湖 → 南京博物院</div>
+      </div>
+      <div class="chev">▼</div>
+    </summary>
+    <ol class="tl">
+      <li><div class="hd"><time>08:30</time><span class="it">鸡鸣寺</span></div><div class="ds">「南朝四百八十寺」之首，登药师佛塔看玄武湖和紫峰大厦同框。<span class="price">¥10</span></div></li>
+      <li><div class="hd"><time>09:40</time><span class="it">台城段城墙（解放门）</span></div><div class="ds">从鸡鸣寺走到解放门登城墙，一边是玄武湖、一边是鸡鸣寺塔，南京最出片的城墙段。<span class="price red">¥30（学生半价）</span></div></li>
+      <li><div class="hd"><time>10:40</time><span class="it">玄武湖公园 · 环洲/菱洲</span></div><div class="ds">免费。租辆共享单车绕湖一段，或在湖边坐坐。秋天湖堤梧桐很好看。</div></li>
+      <li><div class="hd"><time>12:00</time><span class="it">午饭：湖南路 / 狮子桥</span></div><div class="ds">地铁 1 号线「玄武门」站 → 湖南路，吃<b>狮子桥美食街</b>，人均 ¥40。</div></li>
+      <li><div class="hd"><time>14:00</time><span class="it">南京博物院（重点！）</span></div><div class="ds">地铁 2 号线「明故宫」站 1 号口。看<b>民国馆</b>（复刻 1930 年代街景，拍照绝了）、历史馆镇馆之宝、特展馆。至少留 3 小时。<b>免费但必须实名预约</b>：每日 18:00 放 7 天后的票，你的场次已放完 → <b>今明两天 18:00 刷回流票，或 15 日当天开馆后捡漏票</b>；约不到改朝天宫（¥25）+ 六朝博物馆（¥30）。<span class="price">免费</span></div></li>
+      <li><div class="hd"><time>17:30</time><span class="it">明故宫遗址公园（顺路，10 分钟）</span></div><div class="ds">就在南博旁边，看看北京故宫的「母本」地基。</div></li>
+      <li><div class="hd"><time>18:30</time><span class="it">晚饭：老门东 or 新街口</span></div><div class="ds">今晚是最后一晚，可以吃顿好的：<b>南京大牌档</b>或<b>马祥兴</b>（百年清真老店，人均 ¥70）。</div></li>
+      <li><div class="hd"><time>20:00</time><span class="it">买手信 + 回酒店收拾行李</span></div><div class="ds">盐水鸭真空装（桂花鸭/韩复兴）、雨花茶、云锦小件。明早要退房去栖霞山，行李可寄存酒店。</div></li>
+    </ol>
+    <div class="daynote">💰 今日 ≈ 鸡鸣寺 ¥10 + 城墙 ¥15（学生）+ 南博 ¥0 + 吃饭 ¥110 + 交通 ¥15 ≈ <b>¥150</b><br>💡 <b>如果南博没抢到票</b>：改成「江宁织造博物馆」（¥30）+「六朝博物馆」（¥30），或去<b>牛首山</b>（¥98，佛顶宫很震撼，但更远）。</div>
+  </details>
+
+  <!-- ================= D5 ================= -->
+  <details class="day" id="d5">
+    <summary>
+      <div class="dnum">DAY<small>05</small></div>
+      <div class="dhead">
+        <div class="t">周一 11/16 · 栖霞山 → 提前返程 <em>半天</em></div>
+        <div class="s">栖霞山红枫节 → 禄口机场 → 白云机场 → 23:30 前返校</div>
+      </div>
+      <div class="chev">▼</div>
+    </summary>
+    <ol class="tl">
+      <li><div class="hd"><time>06:50</time><span class="it">退房，带行李出发</span></div><div class="ds">今天不能再把行李放酒店了（回程来不及取）。<b>行李随身带走</b>，栖霞山游客中心可寄存。</div></li>
+      <li><div class="hd"><time>07:10</time><span class="it">打车直达栖霞山（约 40–50 分钟）</span></div><div class="ds">从新街口/张府园打车约 ¥70–90；<b>别坐地铁</b>（要 80 分钟还带行李）。8:00 前到，人最少。</div></li>
+      <li><div class="hd"><time>08:00</time><span class="it">栖霞山 · 红枫节（精简路线）</span></div><div class="ds">行李存游客中心 → <b>栖霞古寺（黄墙红枫）→ 千佛岩石窟 → 明镜湖</b> → 走到碧云亭看长江。约 3 小时，<b>不上山顶</b>，保证 11:00 前下山。<span class="price red">¥80 红枫节（学生半价 ¥40）</span></div><div class="tip"><b>门票：</b>红枫节期间（10.18–12.18）成人 ¥80、线上 ¥78，平日 ¥50；景区 7:00–17:00，栖霞古寺 8:00–16:00。穿运动鞋，多石阶。<br><b>枫叶实况：</b>11 月中旬是<b>初红期</b>（不是月底的最盛期），但人少、古寺黄墙配初染红叶也很出片；如果当天天不好或不想爬山，改「朝天宫 + 六朝博物馆」的室内半天。</div></li>
+      <li><div class="hd"><time>11:10</time><span class="it">取行李 → 打车去禄口机场（约 50–60 分钟）</span></div><div class="ds">栖霞山 → 禄口机场约 45 km，打车 ¥120–150。<b>13:00 前到机场</b>，留足缓冲。也可地铁 S7→S1，但带行李不推荐。</div></li>
+      <li><div class="hd"><time>13:00</time><span class="it">机场午饭 + 休息</span></div><div class="ds">禄口 T1/T2 有餐厅，吃点东西、把特产打包托运。</div></li>
+      <li><div class="hd"><time>15:00</time><span class="it">值机安检（订 17:30–18:00 起飞）</span></div><div class="ds"><b>关键：</b>订 <b>17:30–18:00</b> 起飞的航班，落地白云 19:40–20:10 → 打车 30–40 分钟 → <b>20:40–21:00 返校</b>，比 23:30 早两个多小时。<br>如果不能更早，<b>最晚 19:00 起飞</b>（落地约 21:20，22:10 到校）；<b>20:00 以后的不要订</b>。</div></li>
+      <li><div class="hd"><time>18:00</time><span class="it">起飞回广州</span></div><div class="ds">落地白云机场 → 打车回白云校区（约 25 km，30–40 分钟，¥70–90），或地铁 3 号线到「人和/龙归」再打车。</div></li>
+      <li><div class="hd"><time>21:00</time><span class="it">返校 ✅</span></div><div class="ds">预计 20:40–21:10 到校，留出 2 小时以上缓冲应对航班延误。</div></li>
+    </ol>
+    <div class="daynote">💰 今日 ≈ 栖霞山 ¥40（学生）+ 打车 ¥200（两段）+ 吃饭 ¥60 + 机票 ¥800 ≈ <b>¥1,100</b>（含返程机票）<br>⚠️ <b>返程航班是全程唯一硬约束</b>：17:30–18:00 起飞最稳，19:00 是极限，20:00 之后一定超时。</div>
+  </details>
+
+  <!-- ================= 预约 ================= -->
+  <!-- ================= 预约 ================= -->
+  <section id="预约">
+    <h2>⏰ 现在就做（只剩 2 天）</h2>
+    <div class="box">
+      <ul class="check">
+        <li><input type="checkbox" id="k3"><label for="k3"><span class="when">今天 11/10</span><b>先买返程机票</b> — 禄口 → 白云，11/16 周一 <b>17:30–18:00 起飞</b>（落地 ≤21:00，23:30 前返校）</label></li>
+        <li><input type="checkbox" id="k4"><label for="k4"><span class="when">今天 11/10</span><b>再买去程机票</b> — 白云 → 禄口，11/12 周四 <b>15:00–16:30 起飞</b>（临时买会贵，可对比高铁 G638 14:48 发车 ¥782）</label></li>
+        <li><input type="checkbox" id="k5"><label for="k5"><span class="when">今天 11/10</span><b>订酒店 4 晚</b> — 11/12–11/16，新街口/张府园，选可免费取消</label></li>
+        <li><input type="checkbox" id="k1"><label for="k1"><span class="when">现在查</span><b>中山陵 11/13 余票</b> — 公众号「中山陵园风景区」，<b>放票窗口（11/6 16:00）已过</b>，现在去刷余票/候补<span class="sub">约到就去；约不到 <b>不影响行程</b>，周五改走「灵谷寺 + 明孝陵 + 音乐台」，动线更顺。</span></label></li>
+        <li><input type="checkbox" id="k2"><label for="k2"><span class="when">现在查</span><b>南京博物院 11/15 余票</b> — 每日 <b>18:00</b> 放 7 天后的票，你的场次在 11/9 18:00 已放完<span class="sub">两个补救机会：<b>①</b> 今明两天 18:00 刷回流票；<b>②</b> 11/15 当天开馆后刷「当天捡漏票」。约不到改「南京市博物馆（朝天宫）¥25 + 六朝博物馆 ¥30」。</span></label></li>
+        <li><input type="checkbox" id="k6"><label for="k6"><span class="when">11/11 晚</span><b>打包 + 收尾</b> — 行李收好，确认酒店、机票、预约截图；周四 12:00 出发</label></li>
+      </ul>
+    </div>
+    <div class="tip" style="margin-top:12px"><b>不用预约、现场买票就行的：</b>明孝陵（¥70/学生半价）、灵谷寺（¥35）、总统府（¥35）、鸡鸣寺（¥10）、中华门（¥50 含城墙博物馆）、科举博物馆（¥50）、栖霞山（红枫节 ¥80，学生半价）、<b>雨花台（免费且免预约）</b>。所以哪怕中山陵、南博都约不到，行程照样跑得通。</div>
+  </section>
+
+  <!-- ================= 预算 ================= -->
+  <section id="预算">
+    <h2>💰 预算表（单人）</h2>
+    <div class="box">
+      <div class="budget">
+        <div class="brow"><div class="l"><b>往返交通</b>飞机往返（临时订，约贵 ¥300–600）</div><div class="r">¥1,700–2,300</div></div>
+        <div class="brow"><div class="l"><b>住宿</b>4 晚 × ¥250</div><div class="r">¥1,000</div></div>
+        <div class="brow"><div class="l"><b>门票</b>明孝陵+总统府+中华门+科举+鸡鸣寺+城墙+栖霞山（学生价）</div><div class="r">¥230</div></div>
+        <div class="brow"><div class="l"><b>市内交通</b>地铁+打车+机场线</div><div class="r">¥150</div></div>
+        <div class="brow"><div class="l"><b>吃饭</b>5 天 × ¥120</div><div class="r">¥600</div></div>
+        <div class="brow"><div class="l"><b>夜游 / 杂费 / 手信</b></div><div class="r">¥400</div></div>
+      </div>
+      <div class="total"><div class="l">合计（舒适版）</div><div class="r">≈ ¥4,300</div></div>
+      <div class="tip" style="margin-top:12px">
+        <b>省钱版（≈ ¥3,300）：</b>往返高铁二等座 ¥1,564（比临时机票稳）+ 低价连锁 4 晚 ¥800 + 门票 ¥230 + 吃饭 ¥600 + 交通 ¥150 ≈ ¥3,340。代价是周四 22:32 才到南京、周一下午就得走。<br>
+        <b>学生证记得带</b>，明孝陵、总统府、中华门、栖霞山、科举博物馆都能半价，一趟省 ¥100+。
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 行李 ================= -->
+  <section id="行李">
+    <h2>🎒 出发清单</h2>
+    <div class="tip" style="margin-bottom:14px">这是简化版。完整的<b>倒计时任务表、打包分类清单、出门 5 分钟检查、应急电话</b>都在 → <a href="南京行前准备.html" style="font-weight:700">行前准备清单页面</a></div>
+    <div class="grid2">
+      <div class="box">
+        <b>证件 / 电子</b>
+        <ul class="check">
+          <li><input type="checkbox" id="p1"><label for="p1">身份证、<b>学生证</b>（半价神器）</label></li>
+          <li><input type="checkbox" id="p2"><label for="p2">充电宝、充电器、数据线</label></li>
+          <li><input type="checkbox" id="p3"><label for="p3">耳机（飞机上用，降噪更香）</label></li>
+          <li><input type="checkbox" id="p4"><label for="p4">提前截图：预约凭证、酒店地址、航班信息</label></li>
+        </ul>
+      </div>
+      <div class="box">
+        <b>衣物（11 月中旬南京 8–18℃，早晚凉）</b>
+        <ul class="check">
+          <li><input type="checkbox" id="p5"><label for="p5">薄羽绒 / 冲锋衣 + 毛衣</label></li>
+          <li><input type="checkbox" id="p6"><label for="p6">运动鞋（两天要走 1.5–2 万步）</label></li>
+          <li><input type="checkbox" id="p7"><label for="p7">帽子、围巾（城墙和山顶风大）</label></li>
+          <li><input type="checkbox" id="p8"><label for="p8">雨伞（南京秋冬偶有小雨）</label></li>
+        </ul>
+      </div>
+      <div class="box">
+        <b>日用</b>
+        <ul class="check">
+          <li><input type="checkbox" id="p9"><label for="p9">洗漱包、防晒、润唇膏</label></li>
+          <li><input type="checkbox" id="p10"><label for="p10">保温杯（景区热水点多）</label></li>
+          <li><input type="checkbox" id="p11"><label for="p11">纸巾/湿巾、小垃圾袋</label></li>
+          <li><input type="checkbox" id="p12"><label for="p12">常备药（感冒药、胃药、创可贴）</label></li>
+        </ul>
+      </div>
+      <div class="box">
+        <b>App / 支付</b>
+        <ul class="check">
+          <li><input type="checkbox" id="p13"><label for="p13">支付宝/微信开通「乘车码」（南京地铁公交通用）</label></li>
+          <li><input type="checkbox" id="p14"><label for="p14">12306 / 携程 查票</label></li>
+          <li><input type="checkbox" id="p15"><label for="p15">高德地图（南京地铁换乘靠它）</label></li>
+          <li><input type="checkbox" id="p16"><label for="p16">提前关注：中山陵、南博 两个预约公众号</label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 备注 ================= -->
+  <section id="备注">
+    <h2>❗ 备选方案 / 注意事项</h2>
+    <div class="box">
+      <p style="margin:0 0 8px"><b>1. 只剩 2 天，两条预约已过窗口</b><br>中山陵（提前 7 天 16:00 放票）和南京博物院（每日 18:00 放 7 天后票）的预约期都已过。策略：<b>先刷余票/回流票，约不到就走替代方案</b>——这条线不影响整体行程，因为本周不是节假日，替代景点随时能进。</p>
+      <p style="margin:0 0 8px"><b>2. 中山陵没约到 → 周五这么改</b><br>地铁 2 号线「钟灵街」站 → <b>灵谷寺</b>（¥35，民国建筑群 + 灵谷塔，人少景好）→ 音乐台（¥10）→ 明孝陵石象路（¥70）→ 下午总统府。比原路线还顺，一点不亏。</p>
+      <p style="margin:0 0 8px"><b>3. 南博没约到 → 周日这么改</b><br><b>南京市博物馆（朝天宫）¥25</b>（江南地区现存规模最大的明清官式建筑群）＋ <b>六朝博物馆 ¥30</b>（贝聿铭团队设计，光影绝了）＋ <b>江宁织造博物馆 ¥30</b>。三个都在市中心，地铁直达。</p>
+      <p style="margin:0 0 8px"><b>4. 纪念馆闭馆期间想看相关历史</b><br>雨花台（已安排）之外，可考虑<b>南京抗日航空烈士纪念馆</b>（紫金山北麓，免费，需确认开放）、<b>渡江胜利纪念馆</b>（免费，长江边）。利济巷慰安所旧址属纪念馆体系，<b>同期也闭馆</b>。</p>
+      <p style="margin:0 0 8px"><b>5. 周一返程守不住 17:30–18:00</b><br>备选：改签到周日晚上飞回（落地约 22:40，23:30 前到校），周一只留半天。但会少一整天的栖霞山，<b>不如直接锁 17:30–18:00 的票</b>。</p>
+      <p style="margin:0 0 8px"><b>6. 天气不好</b><br>11 月中旬南京约 8–18℃，比月底暖和。雨天把钟山换到室内日：朝天宫 + 六朝博物馆 + 总统府 + 1912 咖啡。</p>
+      <p style="margin:0"><b>7. 吃的清单（别错过）</b><br>鸭血粉丝汤 · 盐水鸭 · 桂花鸭 · 鸭油酥烧饼 · 小笼包/汤包 · 牛肉锅贴 · 赤豆元宵 · 糖芋苗 · 美龄粥 · 活珠子（慎点）</p>
+    </div>
+  </section>
+
+  <section id="链接">
+    <h2>🔗 实用链接</h2>
+    <div class="box note">
+      <span class="pill">火车票：12306</span>
+      <span class="pill">机票/酒店：携程 / 同程</span>
+      <span class="pill">地铁图：高德</span>
+      <span class="pill">预约：微信搜「中山陵园风景区」「南京博物院」</span>
+      <span class="pill">雨花台：入园免预约</span>
+      <p style="margin:10px 0 0">数据参考：G638/637/T152 时刻与票价（2026-11 更新）、栖霞山红枫节票价、中山陵免费实名预约（提前 7 天 16:00 放票）、南博每日 18:00 放 7 天后票、雨花台烈士陵园免费且入园无需预约（纪念馆 8:30–17:00，周一闭馆）、<b>侵华日军南京大屠杀遇难同胞纪念馆 2026.11.9–12.13 闭馆</b>。出行前请以 12306 / 各景区公众号当日公告为准。</p>
+    </div>
+  </section>
+
+  <footer>
+    <b>金陵 4 晚 5 日</b> · 11.12 – 11.16（本周四出发）· 广师大白云校区定制 · 周一 23:30 前返校<br>
+    已更新：纪念馆闭馆 → 雨花台替代 ｜ 返程提前至 17:30–18:00 ｜ <a href="南京行前准备.html">行前准备清单</a><br>
+    打印本页可直接当纸质行程（Ctrl+P）
+  </footer>
+</div>
+
+<a href="#" class="backtop" title="回到顶部">↑</a>
+
+<script>
+(function(){
+  // 倒计时
+  var start = new Date(2026, 10, 12, 0, 0, 0); // 2026-11-12
+  var now = new Date();
+  var days = Math.ceil((start - now) / 86400000);
+  var el = document.getElementById('cd');
+  if (el) {
+    if (days > 0) el.textContent = days;
+    else if (days === 0) el.textContent = '今天';
+    else el.textContent = '已出发';
+  }
+
+  // 复选框本地记忆
+  var KEY = 'nanjing-trip-checks-v1';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) {}
+  var boxes = document.querySelectorAll('ul.check input[type=checkbox]');
+  boxes.forEach(function(b){
+    if (saved[b.id]) { b.checked = true; b.closest('li').classList.add('done'); }
+    b.addEventListener('change', function(){
+      saved[b.id] = b.checked;
+      b.closest('li').classList.toggle('done', b.checked);
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>

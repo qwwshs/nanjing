@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京 4 晚 5 日 · 11.12–11.16 · 行程与行前准备</title>
+<meta name="description" content="广东技术师范大学白云校区出发的南京 4 晚 5 日行程：11/12 周四出发，11/16 周一返校。含每日路线、预约攻略、预算与行前清单。">
+<style>
+:root{
+  --red:#9e2b25; --red-d:#7c1f1a; --gold:#c9a227; --ink:#22201e; --ink-2:#57514c;
+  --line:#e7ded4; --bg:#f6f2ec; --card:#fffdf9; --green:#2f6b4f; --blue:#2a5b7d;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+  radial-gradient(1200px 500px at 80% -10%, #f3e3d0 0%, transparent 60%),
+  radial-gradient(900px 400px at -10% 5%, #efe6d9 0%, transparent 55%),
+  var(--bg);
+  color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:60px}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+
+/* 头部 */
+header{background:linear-gradient(135deg,var(--red-d) 0%,var(--red) 55%,#b8452f 100%);color:#fff;
+  padding:44px 0 40px;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+header::after{content:"金陵";position:absolute;right:-8px;bottom:-42px;font-size:150px;font-weight:900;
+  color:rgba(255,255,255,.07);letter-spacing:-8px;pointer-events:none;
+  font-family:"Songti SC","SimSun",serif}
+header .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12px;letter-spacing:4px;opacity:.85;margin:0 0 10px}
+h1{margin:0;font-size:36px;line-height:1.2;font-weight:800;letter-spacing:1px;
+  font-family:"Songti SC","SimSun","PingFang SC",serif}
+h1 small{display:block;font-size:14px;font-weight:400;opacity:.9;margin-top:12px;letter-spacing:1.5px;
+  font-family:-apple-system,"PingFang SC",sans-serif}
+.meta-row{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:999px;
+  padding:6px 15px;font-size:13px;backdrop-filter:blur(4px)}
+.chip b{color:#ffe9a8}
+
+/* 两张入口卡 */
+.entries{display:grid;gap:14px;margin:-30px auto 30px;position:relative;z-index:2}
+@media(min-width:660px){.entries{grid-template-columns:1fr 1fr}}
+.entry{display:block;text-decoration:none;color:inherit;background:var(--card);
+  border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;box-shadow:var(--shadow);
+  transition:transform .18s ease, box-shadow .18s ease;position:relative;overflow:hidden}
+.entry:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(124,31,26,.13)}
+.entry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red)}
+.entry.prep::before{background:#8a7355}
+.entry .ico{font-size:26px;line-height:1}
+.entry h2{margin:8px 0 4px;font-size:21px;letter-spacing:.5px;
+  font-family:"Songti SC","SimSun",serif}
+.entry .desc{font-size:13px;color:var(--ink-2);margin:0 0 14px}
+.entry .go{font-size:13px;font-weight:800;color:var(--red)}
+.entry.prep .go{color:#7a5a1f}
+.entry .file{font-size:11px;color:#a09484;margin-top:10px;font-family:ui-monospace,Consolas,monospace}
+
+/* 概览 */
+section{margin:0 0 30px}
+h2.sec{font-size:19px;margin:0 0 14px;display:flex;align-items:center;gap:10px;
+  font-family:"Songti SC","SimSun",serif;letter-spacing:.5px}
+h2.sec::before{content:"";width:4px;height:19px;background:var(--red);border-radius:2px;display:inline-block}
+.overview{display:grid;gap:10px}
+@media(min-width:660px){.overview{grid-template-columns:repeat(2,1fr)}}
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+  box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start}
+.day .n{flex:0 0 auto;width:44px;text-align:center;color:var(--red-d);font-weight:800;font-size:11px;
+  line-height:1.25;padding-top:2px}
+.day .n b{display:block;font-size:19px;font-family:"Songti SC","SimSun",serif;color:var(--red)}
+.day .c{flex:1;min-width:0}
+.day .t{font-weight:800;font-size:14.5px}
+.day .d{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+.day .d span{display:inline-block;background:#f0e6d6;color:#7a5a1f;border-radius:999px;
+  padding:0 8px;font-size:11px;font-weight:700;margin-right:5px}
+.day.key{border-color:#e8b9b2;background:#fdf7f5}
+.day.key .t{color:var(--red-d)}
+
+/* 提示条 */
+.notice{background:#fdf3f1;border:1px solid #e8b9b2;border-left:4px solid var(--red);border-radius:12px;
+  padding:16px 18px;margin:0 0 26px}
+.notice b{color:var(--red-d)}
+.notice p{margin:8px 0 0;font-size:13px;color:#5a3a34;line-height:1.75}
+.notice p:first-child{margin-top:0}
+
+/* 页脚 */
+footer{text-align:center;font-size:12px;color:#a09484;margin:40px 0 0;line-height:2}
+footer b{color:var(--red)}
+footer a{color:var(--blue);text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media print{body{background:#fff}.entry:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">NANJING · 金陵 · 六朝古都</p>
+    <h1>南京 4 晚 5 日
+      <small>11 月 12 日（周四）— 11 月 16 日（周一）· 广东技术师范大学白云校区出发</small>
+    </h1>
+    <div class="meta-row">
+      <span class="chip">有效游玩 <b>3.5 天</b></span>
+      <span class="chip">单人预算 <b>≈ ¥4,300</b></span>
+      <span class="chip">周一 <b>23:30 前返校</b></span>
+      <span class="chip">纪念馆闭馆 → <b>雨花台替代</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 两个入口 -->
+  <div class="entries">
+    <a class="entry" href="南京5日行程.html">
+      <div class="ico">🗺️</div>
+      <h2>5 日行程</h2>
+      <p class="desc">逐日时间线 · 交通方案 · 住宿建议 · 预算表 · 备选方案</p>
+      <div class="go">打开行程 →</div>
+      <div class="file">南京5日行程.html</div>
+    </a>
+    <a class="entry prep" href="南京行前准备.html">
+      <div class="ico">🎒</div>
+      <h2>行前准备</h2>
+      <p class="desc">订票核对 · 可勾选打包清单 · 出门检查 · 应急电话（进度自动保存）</p>
+      <div class="go">打开准备清单 →</div>
+      <div class="file">南京行前准备.html</div>
+    </a>
+  </div>
+
+  <!-- 重要提示 -->
+  <div class="notice">
+    <p><b>① 大屠杀纪念馆行程期间闭馆。</b>官方通告：侵华日军南京大屠杀遇难同胞纪念馆因筹备重要活动及场馆设备检修，<b>2026 年 11 月 9 日 — 12 月 13 日闭馆</b>。行程已改为周六上午 <b>雨花台烈士陵园</b>——免费、免预约，同为南京最重要的红色纪念地，且与老城南顺路。</p>
+    <p><b>② 两个预约已过放票窗口。</b>中山陵（提前 7 天 16:00 放票）和南京博物院（每日 18:00 放 7 天后票）在你下单前均已放完。策略是刷余票 / 当天捡漏；约不到也不影响行程——中山陵改<b>灵谷寺</b>，南博改<b>朝天宫 + 六朝博物馆</b>。</p>
+    <p><b>③ 返程是硬约束。</b>周一要 23:30 前回到白云校区，返程必须订 <b>17:30–18:00 从禄口起飞</b>的航班（落地白云约 20:00，打车 30–40 分钟到校）；20:00 之后的一律不要订。</p>
+  </div>
+
+  <!-- 行程概览 -->
+  <section>
+    <h2 class="sec">行程一览</h2>
+    <div class="overview">
+      <div class="day">
+        <div class="n">DAY<b>01</b></div>
+        <div class="c"><div class="t">周四 11/12 · 出发</div>
+          <div class="d"><span>半天</span>白云校区 → 白云机场 → 南京 → 夫子庙夜景</div></div>
+      </div>
+      <div class="day">
+        <div class="n">DAY<b>02</b></div>
+        <div class="c"><div class="t">周五 11/13 · 钟山</div>
+          <div class="d"><span>全天</span>中山陵（刷余票）→ 明孝陵石象路 → 总统府 → 1912</div></div>
+      </div>
+      <div class="day">
+        <div class="n">DAY<b>03</b></div>
+        <div class="c"><div class="t">周六 11/14 · 雨花台</div>
+          <div class="d"><span>全天</span>雨花台烈士陵园 → 老门东 → 中华门 → 夫子庙画舫</div></div>
+      </div>
+      <div class="day">
+        <div class="n">DAY<b>04</b></div>
+        <div class="c"><div class="t">周日 11/15 · 城墙</div>
+          <div class="d"><span>轻松</span>鸡鸣寺 → 台城城墙 → 玄武湖 → 南京博物院</div></div>
+      </div>
+      <div class="day key">
+        <div class="n">DAY<b>05</b></div>
+        <div class="c"><div class="t">周一 11/16 · 返程</div>
+          <div class="d"><span>半天</span>栖霞山红枫 → 禄口机场 → 白云机场 → 23:30 前返校</div></div>
+      </div>
+      <div class="day key">
+        <div class="n">🎒</div>
+        <div class="c"><div class="t">出发前</div>
+          <div class="d"><span>2 天</span>今天订往返机票 + 酒店；明晚打包；周四 12:00 出发</div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <b>南京 4 晚 5 日</b> · 11.12 – 11.16 · 广师大白云校区定制<br>
+    羊城 → 金陵 · 火车 7h44 / 飞机 2h05 ｜ 页面可直接 Ctrl+P 打印成纸质版<br>
+    <a href="南京5日行程.html">行程</a> · <a href="南京行前准备.html">行前准备</a>
+  </footer>
+</div>
+
+</body>
+</html>
